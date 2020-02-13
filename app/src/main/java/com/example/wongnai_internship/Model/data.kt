@@ -1,4 +1,4 @@
-package com.example.wongnai_internship.APi
+package com.example.wongnai_internship.Model
 
 data class APiResponse(
     val status: String,

@@ -9,12 +9,6 @@
     tools:context=".MainActivity">
 
 
-    <SearchView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="191dp"
-        tools:layout_editor_absoluteY="1dp" />
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"

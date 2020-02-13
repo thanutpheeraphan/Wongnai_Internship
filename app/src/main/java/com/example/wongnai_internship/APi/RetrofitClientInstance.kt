@@ -8,11 +8,10 @@ object RetrofitClientInstance {
     private var retrofit: Retrofit? = null
     private val BASE_URL = "https://api.coinranking.com/v1/"
 
-    // create a retrofit instance, only if it has not been created yet.
     val retrofitInstance: Retrofit?
         get() {
             if (retrofit == null) {
-                retrofit = retrofit2.Retrofit.Builder()
+                retrofit = Retrofit.Builder()
                     .baseUrl(BASE_URL)
                     .addConverterFactory(GsonConverterFactory.create())
                     .build()
