@@ -1,4 +1,4 @@
-package com.example.wongnai_internship.APi
+package com.example.wongnai_internship.API
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

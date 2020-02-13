@@ -1,4 +1,4 @@
-package com.example.wongnai_internship.APi
+package com.example.wongnai_internship.API
 
 import com.example.wongnai_internship.Model.APiResponse
 import retrofit2.Call

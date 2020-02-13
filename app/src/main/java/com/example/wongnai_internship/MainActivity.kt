@@ -4,8 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.wongnai_internship.Model.APiResponse
-import com.example.wongnai_internship.APi.ApiService
-import com.example.wongnai_internship.APi.RetrofitClientInstance
+import com.example.wongnai_internship.API.ApiService
+import com.example.wongnai_internship.API.RetrofitClientInstance
 import com.example.wongnai_internship.Adapter.RecyclerAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 import retrofit2.Call
