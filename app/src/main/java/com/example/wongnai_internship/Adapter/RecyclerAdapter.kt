@@ -1,12 +1,12 @@
-package com.example.wongnai_internship
+package com.example.wongnai_internship.Adapter
 
 import android.net.Uri
-import android.util.Log.d
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.wongnai_internship.Model.Coins
+import com.example.wongnai_internship.R
 import com.github.twocoffeesoneteam.glidetovectoryou.GlideToVectorYou
 
 import kotlinx.android.synthetic.main.layout_coins.view.*
@@ -15,7 +15,13 @@ class RecyclerAdapter (private val coins: List<Coins> ): RecyclerView.Adapter<Re
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        return CoinViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.layout_coins,parent,false))
+        return CoinViewHolder(
+            LayoutInflater.from(parent.context).inflate(
+                R.layout.layout_coins,
+                parent,
+                false
+            )
+        )
     }
 
     override fun getItemCount(): Int {
@@ -44,7 +50,10 @@ class CoinViewHolder constructor(
     fun bind(coins: Coins){
         coin_name.setText(coins.name)
         coin_description.setText(coins.description)
-        GlideToVectorYou.init().with(itemView.context).setPlaceHolder(R.drawable.ic_launcher_background,R.drawable.ic_launcher_background).load(
+        GlideToVectorYou.init().with(itemView.context).setPlaceHolder(
+            R.drawable.ic_launcher_background,
+            R.drawable.ic_launcher_background
+        ).load(
             Uri.parse(coins.iconUrl),coin_image)
 
     }
