@@ -37,7 +37,7 @@
             android:id="@+id/coin_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="The Title of a Blog"
+            android:text=" Bitcoin Name"
             android:textColor="#000"
             android:textSize="16sp"
             app:layout_constraintBottom_toTopOf="@+id/coin_description"
@@ -51,8 +51,7 @@
             android:layout_width="325dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:text="00000000000000000000000000000000000000000000000000000000000000000000
-            000000000000000000000000000000"
+            android:text="Bitcoin is the first decentralized digital currency that can be sent through the internet globally without using financial institutions like banks. The network is controlled by many of its users, instead of a few entities."
             android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
